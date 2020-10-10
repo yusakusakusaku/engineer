@@ -334,6 +334,10 @@ a:hover {
   font-size: 50px;
 }
 
+.fuck {
+  margin-top:61px;
+}
+
 .intro li{
   font-weight: bold;
   list-style: none;
@@ -354,7 +358,7 @@ a:hover {
   display:block;
 }*/
 
-.intro p:nth-child(3) {
+.intro p:nth-child(2) {
   background-color: #00ff99;
   width:30px;
   height:30px;
@@ -362,7 +366,7 @@ a:hover {
   left:0%;
 }
 
-.intro p:nth-child(4) {
+.intro p:nth-child(3) {
   background-color: #00ff99;
   width:30px;
   height:30px;
@@ -370,7 +374,7 @@ a:hover {
   left:0%;
 }
 
-.intro p:nth-child(5) {
+.intro p:nth-child(4) {
   background-color: #00ff99;
   width:30px;
   height:30px;
@@ -378,7 +382,7 @@ a:hover {
   left:0%;
 }
 
-.intro p:nth-child(6) {
+.intro p:nth-child(5) {
   background-color: #00ff99;
   width:30px;
   height:30px;
@@ -386,7 +390,7 @@ a:hover {
   left:0%;
 }
 
-.intro p:nth-child(7) {
+.intro p:nth-child(6) {
   background-color: #00ff99;
   width:30px;
   height:30px;
@@ -475,49 +479,44 @@ a:hover {
   left:24%;
 }
 
+
 /*html,css,javascript logo */
 
 .fa-html5 {
   color:tomato;
   margin:0 50px;
   padding: 100px 0px;
-  transition:all 0.1s ease;
+  animation: all 15s ease infinite;
+  animation-name: rollroll;
 }
 
-/*.fa-html5:hover {  /*hoverhover
-  transition:all 0.1s ease;
-  border: 5px solid silver;
-  background-color:rgba(192,192,192, 0.1);
-  box-shadow: 10px 10px;
-}*/
 
 .fa-css3-alt {
   color:blue;
   margin:0 50px;
   padding: 100px 0px;
-  transition:all 0.1s ease;
+  animation: all 20s ease infinite;
+  animation-name: rollroll;
 }
 
-/*.fa-css3-alt:hover {  /*hoverhover
-  transition:all 0.1s ease;
-  background-color:rgba(192,192,192, 0.1);
-  border:5px solid silver;
-  box-shadow: 10px 10px;
-}*/
 
 .fa-js-square {
   color:yellow;
   margin:0 50px;
   padding: 100px 0px;
-  transition:all 0.1s ease;
+  animation: all 25s ease infinite;
+  animation-name: rollroll;
 }
 
-/*.fa-js-square:hover {   /*hoverhover
-  transition:all 0.1s ease;
-  background-color:rgba(192,192,192, 0.1);
-  border:5px solid silver;
-  box-shadow: 10px 10px;
-}*/
+
+@keyframes rollroll {
+  from {
+    transform:rotateY(0deg);
+  }
+  to {
+    transform: rotateY(720deg);
+  }
+}
 
 .langauge p{
   float:left;
