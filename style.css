@@ -447,7 +447,7 @@ a:hover {
   height:30px;
   background-color: #00ff99;
   animation: all 10s linear infinite;
-  animation-name: rol;
+  animation-name: roll;
 }
 
 .roll2 {
