@@ -19,7 +19,7 @@ body{
   background-color:white;
   position: relative;
   overflow: hidden;
-  transition: all 1s ease;
+  transition: all 3s ease;
 }
 
 .top-wrapper:hover {
@@ -38,6 +38,14 @@ body{
   font-weight:bold;
 }
 
+.nav {
+  position: absolute;
+  top:10px;
+  left:95%;
+  font-size:50px;
+  float:right;
+  z-index:10;
+}
 
 .move p{
   background-color:#00CC66;
@@ -246,7 +254,7 @@ body{
   z-index: 10;
 }
 
-a:hover {
+.click:hover {
   transition: all 0.1s ease;
   /*width:400px;*/
   color: white;
@@ -495,7 +503,7 @@ a:hover {
   color:blue;
   margin:0 50px;
   padding: 100px 0px;
-  animation: all 20s ease infinite;
+  animation: all 15s ease infinite;
   animation-name: rollroll;
 }
 
@@ -504,7 +512,7 @@ a:hover {
   color:yellow;
   margin:0 50px;
   padding: 100px 0px;
-  animation: all 25s ease infinite;
+  animation: all 15s ease infinite;
   animation-name: rollroll;
 }
 
@@ -616,4 +624,43 @@ footer p {
   text-align: center;
   padding-top:50px;
   font-size:30px;
+}
+
+
+
+/*ナビゲーションハンバーガー*/
+
+.open {
+  background-color: white;
+  color:#00ff99;
+}
+.open ul li {
+  list-style: none;
+  text-align: center;
+  margin-top:30px;
+}
+
+.open ul li a{
+  font-weight:bold;
+  text-decoration: none;
+  color:#00ff99;
+  font-size: 40px;
+}
+/*ドロワーナビゲーションの記述*/
+
+#nav {
+  background-color: white;
+  width:270px;
+  height:100%;
+  position:fixed;
+  right:-270px;
+  top:0;
+}
+
+.show {
+  transform: translate3d(-270px, 0, 0);
+}
+
+#wrapper, #nav {
+  transition: transform 0.3s;
 }
