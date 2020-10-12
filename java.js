@@ -1,7 +1,7 @@
 'use strict';
 
-jQuery(document).ready(function() {
-  jQuery('#open_nav').on('click', function() {
-    jQuery('#wrapper, #nav').toggleClass('show');
+$(document).ready(function() {
+  $('#open_nav').on('click', function() {
+    $('#wrapper, #nav').toggleClass('show');
   });
 });
