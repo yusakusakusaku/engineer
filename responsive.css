@@ -1,0 +1,59 @@
+/*-------------------responsive only----------------------------*/
+@media (max-width:1000px) {
+  body {
+    margin:0;
+    padding:0;
+    min-width: 1000px;
+    width:100%;
+  }
+
+  .wrap {
+    overflow: hidden;
+  }
+}
+
+@media (max-width:670px) {
+
+  body {
+    margin:0%;
+    padding:0%;
+    min-width: 670px;
+    width:100%;
+  }
+
+  .wrap {
+    overflow: hidden;
+  }
+
+  .nav {  /*ハンバーガーメニュー*/
+    left:90%;
+  }
+
+  .hi {  /*hi,I'm Yusaku.*/
+    top:200px;
+  }
+
+  .move a {/*--please scroll---*/
+    position: absolute;
+    left:32%;
+    margin-top:50px;
+  }
+
+  /*-----------------second-wrapper------------------------*/
+
+  .about {
+    text-align: center;
+    width:100%;
+    margin:auto;
+  }
+
+  .about img {
+    width:370px;
+    height:370px;
+    margin: auto;
+  }
+
+
+  .about h2{
+    font-size:70px;
+  }
