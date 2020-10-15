@@ -315,99 +315,57 @@ body{
   left:10%;
 }
 
-.icon i{
-  font-size:100px;
-  display:block;
-}
-
 .intro {
-  position: absolute;
-  top:220px;
-  left:53%;
+  position: relative;
   float:right;
-  height:480px;
-  width:630px;
-  /*font-style: italic;*/
 }
 
-
-.fa-user-circle { /*自己紹介アイコン*/
-  font-size:60px;
-  padding-left:250px;
+.myname { /*自己紹介５つ*/
+  margin-right:50px;
+  height:100%;
+  width:100%;
 }
 
-.fa-user-circle:hover {
-  color:#00ff99;
-  transform: translate(0, -10px);
-  font-size:70px;
-}
-
-.intro h3{
-  font-size: 50px;
-}
-
-.myname {
-  margin-top:61px;
-}
-
-.intro li{
+.myname li{
   font-weight: bold;
   list-style: none;
-  position: relative;
   font-size:25px;
   padding-top:30px;
   padding-left:70px;
 }
 
-/*.intro li::before {
-  content:"";
-  width:100px;
-  height:100px;
-  color:#00ff99;
+.intro p { /*ボックス５個*/
   position: absolute;
-  top:0;
-  left:0;
-  display:block;
-}*/
-
-.intro p:nth-child(2) {
   background-color: #00ff99;
   width:30px;
   height:30px;
-  top:95px;
-  left:0%;
+  top:0;
+  left:0;
+}
+
+.intro p:nth-child(2) {
+  top:35px;
+  left:0;
 }
 
 .intro p:nth-child(3) {
-  background-color: #00ff99;
-  width:30px;
-  height:30px;
-  top:165px;
-  left:0%;
+  top:105px;
+  left:0;
 }
 
 .intro p:nth-child(4) {
-  background-color: #00ff99;
-  width:30px;
-  height:30px;
-  top:230px;
-  left:0%;
+  top:170px;
+  left:0;
 }
 
 .intro p:nth-child(5) {
-  background-color: #00ff99;
-  width:30px;
-  height:30px;
-  top:297px;
-  left:0%;
+  top:237px;
+  left:0;
 }
 
 .intro p:nth-child(6) {
-  background-color: #00ff99;
-  width:30px;
-  height:30px;
-  top:370px;
-  left:0%;
+  top:310px;
+  left:0;
 }
 
 .intro span {
