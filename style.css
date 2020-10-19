@@ -12,6 +12,11 @@ body{
     font-family: "Exo", sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 /*-----------------------------------first-contents-----------------------------*/
 
 
@@ -382,6 +387,10 @@ body{
   font-size:50px;
 }
 
+.skill h2 {
+  margin-top:30px;
+}
+
 
 .langauge {
   font-size:150px;
@@ -395,6 +404,7 @@ body{
   display:inline-block;
   box-sizing: border-box;
   margin: auto;
+  margin-top:100px;
 }
 
 .mycss {
@@ -497,6 +507,10 @@ body{
   text-align: center;
 }
 
+.contact h2 {
+  padding-top:30px;
+}
+
 .form {
   text-align: center;
   margin-top: 130px;
@@ -554,18 +568,15 @@ body{
 
 footer {
   background-color: #00ff99;
-  height:100px;
   width: 100%;
   text-align: center;
-  display: table;
+  bottom:0;
 }
 
 footer p {
   color: white;
   font-weight:bold;
-  font-size:15px;
-  display: table-cell;
-  vertical-align: middle;
+  line-height: 100px;
 }
 
 
