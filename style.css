@@ -1,215 +1,619 @@
-/*-------------------responsive only----------------------------*/
-@media (max-width:1000px) {
-  body {
-    margin:0;
-    padding:0;
-    min-width: 1000px;
-    width:100%;
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+  margin:0%;
+  padding:0%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Exo", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/*-----------------------------------first-contents-----------------------------*/
+
+
+.top-wrapper{
+  padding-top:250px;
+  color:black;
+  height:650px;
+  background-color:white;
+  overflow: hidden;
+  transition: all 3s ease;
+  text-align: center;
+  z-index:10;
+}
+
+.top-wrapper:hover {
+  background-color:#00ff99 ;
+  transition: all 3s ease;
+  color:white;
+}
+
+.hi {
+  font-size:40px;
+  z-index:10;
+  font-weight:bold;
+  margin-bottom:30px;
+}
+
+.nav {
+  position: absolute;
+  top:10px;
+  left:95%;
+  font-size:50px;
+}
+
+
+.click {
+  padding:6px 15px;
+  font-size:25px;
+  width:250px;
+  font-family: "Bookman Old Style", sans-serif;
+  display:block;
+  color: white;
+  border: 3px solid white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  outline:none;
+  margin: auto;
+}
+
+.click:hover {
+  transition: all 0.1s ease;
+  /*width:400px;*/
+  color: white;
+  border: 3px solid white;
+  background-color: white;
+  color:#00ff99;
+}
+
+.move p{
+  background-color:#00CC66;
+  animation: rotate  linear infinite;
+}
+
+/*box*/
+
+.move p:nth-child(1) {
+  position: absolute;
+  top:350px;
+  left:30%;
+  opacity:0.5;
+  width:50px;
+  height:50px;
+  animation-delay: 2s;
+  animation-duration: 1.2s;
+  animation-duration: 5s;
+}
+
+.move p:nth-child(2) {
+  position: absolute;
+  top:5px;
+  left:10%;
+  opacity:0.5;
+  width:100px;
+  height:100px;
+  animation-delay: 1.0s;
+  animation-duration:11s ;
+}
+
+
+.move p:nth-child(3) {
+  position: absolute;
+  top:500px;
+  left:50%;
+  opacity:0.5;
+  width:130px;
+  height:130px;
+  animation-delay: 0s;
+  animation-duration:25s ;
+}
+
+.move p:nth-child(4) {
+  position: absolute;
+  top:16px;
+  left:80%;
+  opacity:0.5;
+  width:120px;
+  height:120px;
+  animation-delay: 1.5s;
+  animation-duration: 5s;
+}
+
+.move p:nth-child(5) {
+  position: absolute;
+  top:50px;
+  left:3%;
+  opacity:0.5;
+  width:50px;
+  height:50px;
+  animation-delay: 2.3s;
+  animation-duration: 8s;
+}
+
+.move p:nth-child(6) {
+  position: absolute;
+  top:80px;
+  left:57%;
+  opacity:0.5;
+  width:70px;
+  height:70px;
+  animation-delay: 1.7s;
+  animation-duration:12s ;
+}
+
+.move p:nth-child(7) {
+  position: absolute;
+  top:440px;
+  left:80%;
+  opacity:0.5;
+  width:45px;
+  height:45px;
+  animation-delay: 1.8s;
+  animation-duration:6s ;
+}
+
+.move p:nth-child(8) {
+  position: absolute;
+  top:290px;
+  left:15%;
+  opacity:0.5;
+  width:35px;
+  height:35px;
+  animation-delay:0.5s ;
+  animation-duration:5s ;
+}
+
+.move p:nth-child(9) {
+  position: absolute;
+  top:180px;
+  left:75%;
+  opacity:0.5;
+  width:60px;
+  height:60px;
+  animation-delay:0.9s ;
+  animation-duration: 7s;
+}
+
+.move p:nth-child(10) {
+  position: absolute;
+  top:200px;
+  left:40%;
+  opacity:0.5;
+  width:75px;
+  height:75px;
+  animation-delay: 0.1s;
+  animation-duration:10s;
+}
+
+.move p:nth-child(11) {
+  position: absolute;
+  top:400px;
+  left:10%;
+  opacity:0.5;
+  width:80px;
+  height:80px;
+  animation-delay:0.5s;
+  animation-duration: 15s;
+}
+
+.move p:nth-child(12) {
+  position: absolute;
+  top:450px;
+  left:25%;
+  opacity:0.5;
+  width:60px;
+  height:60px;
+  animation-delay:2.9s;
+  animation-duration: 30s;
+}
+
+.move p:nth-child(13) {
+  position: absolute;
+  top:500px;
+  left:80%;
+  opacity:0.5;
+  width:50px;
+  height:50px;
+  animation-delay:1.6s;
+  animation-duration: 5s;
+}
+
+.move p:nth-child(14) {
+  position: absolute;
+  top:550px;
+  left:70%;
+  opacity:0.5;
+  width:60px;
+  height:60px;
+  animation-delay:2.4s;
+  animation-duration: 20s;
+}
+
+.move p:nth-child(15) {
+  position: absolute;
+  top:560px;
+  left:40%;
+  opacity:0.5;
+  width:100px;
+  height:100px;
+  animation-delay:0.5s;
+  animation-duration: 10s;
+}
+
+@keyframes rotate {
+  from {
+    transform:translateY(0) translateX(0) rotate(0deg);
+    border-radius: 0%;
   }
-
-  .wrap {
-    overflow: hidden;
+  to {
+    transform:translateY(-1000px) translateX(100px) rotate(720deg);
+    border-radius: 50%;
   }
+}
 
-  body {
-    margin:0%;
-    padding:0%;
-    min-width: 670px;
-    width:100%;
-    height:100%;
+
+
+/*ここまで！！！！！！！！！！！！！！！！！！！*/
+
+
+
+
+
+
+
+
+
+/*------------------------------second-contents------------------------------------*/
+
+.second-wrapper {
+  position: relative;
+  width:100%;
+  height:750px;
+}
+
+/*.second-wrapper :hover {
+  background-color: white;
+}*/
+
+.about h2{
+  color:#00ff99;
+  text-align: center;
+  padding:100px;
+  font-size:80px;
+  position:relative;
+}
+
+.img{
+  width:430px;
+  height:430px;
+  border-radius: 50%;
+  position:absolute;
+  top:250px;
+  left:10%;
+}
+
+.intro {
+  position: relative;
+  float:right;
+}
+
+.myname { /*自己紹介５つ*/
+  margin-right:50px;
+  height:100%;
+  width:100%;
+}
+
+.myname li{
+  font-weight: bold;
+  list-style: none;
+  font-size:25px;
+  padding-top:30px;
+  padding-left:70px;
+}
+
+.intro p { /*ボックス５個*/
+  background-color: #00ff99;
+  width:30px;
+  height:30px;
+  position: absolute;
+  animation: all 10s linear infinite;
+  animation-name: intro;
+}
+
+.intro p:nth-child(2) {
+  top:35px;
+  left:0;
+}
+
+.intro p:nth-child(3) {
+  top:105px;
+  left:0;
+}
+
+.intro p:nth-child(4) {
+  top:170px;
+  left:0;
+}
+
+.intro p:nth-child(5) {
+  top:237px;
+  left:0;
+}
+
+.intro p:nth-child(6) {
+  top:310px;
+  left:0;
+}
+
+.intro span {
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium';
+}
+
+@keyframes  intro{
+  from {
+    transform: rotateX(0deg);
   }
-
-  .wrap {
-    overflow: hidden;
-  }
-
-  .top-wrapper {
-    background-color: #00ff99;
-  }
-
-  .nav {  /*ハンバーガーメニュー*/
-    left:90%;
-    color: white;
-  }
-
-  .hi {  /*hi,I'm Yusaku.*/
-    top:200px;
-    color: white;
-  }
-
-  .move {/*--please scroll---*/
-    text-align: center;
-  }
-
-  /*-----------------second-wrapper------------------------*/
-
-  .second-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    height:100%;
-    justify-content: center;
-  }
-
-  .about {
-    text-align:center;
-  }
-
-  .about h2{ /*ABOUTの文字*/
-    font-size:70px;
-  }
-
-  .about img { /*プロフィール画像 (yusaku-icon)*/
-    width:370px;
-    height:370px;
-    margin: auto;
-    position: static;
-    margin-top:-50px;
-    margin-bottom:30px;
-  }
-
-
-  /*--------------------third-wrapper--------------------------*/
-
-  .third-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    height:100%;
-    justify-content: center;
-    padding-top:20px;
-  }
-
-  .langauge {
-    width:100%;
-    display:inline-block;
-  }
-
-  .myhtml {
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-    display:inline-block;
-    box-sizing: border-box;
-  }
-
-  .mycss {
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-    display:inline-block;
-    box-sizing: border-box;
-  }
-
-  .myjs{
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-    display:inline-block;
-    box-sizing: border-box;
+  to {
+    transform: rotateX(720deg);
   }
 }
 
 
 
 
+/*-------------------------third-wrapper-------------------------*/
 
 
+.third-wrapper {
+  height:650px;
+  width:100%;
+  text-align: center;
+}
 
-/*-----------------------670px----------------------------*/
+.skill {
+  text-align: center;
+  color:#00ff99;
+  font-size:50px;
+}
 
-@media (max-width:670px)   {
-  body {
-    margin:0%;
-    padding:0%;
-    min-width: 670px;
-    width:100%;
-    height:100%;
+.skill h2 {
+  margin-top:30px;
+}
+
+
+.langauge {
+  font-size:150px;
+  display: inline;
+}
+
+
+.myhtml {
+  width:25%;
+  text-align: center;
+  display:inline-block;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top:100px;
+}
+
+.mycss {
+  width:25%;
+  text-align: center;
+  display:inline-block;
+  box-sizing: border-box;
+}
+
+.myjs{
+  width:25%;
+  text-align: center;
+  display:inline-block;
+  box-sizing: border-box;
+}
+
+.myhtml p{
+  width:100%;
+}
+
+.mycss p{
+  width:100%;
+}
+
+.myjs p{
+  width:100%;
+}
+
+/*html,css,javascript logo */
+
+.fa-html5 {
+  color:tomato;
+  width:100%;
+  animation: all 15s ease infinite;
+  animation-name: rollroll;
+}
+
+
+.fa-css3-alt {
+  color:blue;
+  width:100%;
+  animation: all 15s ease infinite;
+  animation-name: rollroll;
+}
+
+
+.fa-js-square {
+  color:yellow;
+  width:100%;
+  animation: all 15s ease infinite;
+  animation-name: rollroll;
+}
+
+
+@keyframes rollroll {
+  from {
+    transform:rotateY(0deg);
   }
-
-  .wrap {
-    overflow: hidden;
+  to {
+    transform: rotateY(720deg);
   }
+}
 
-  .top-wrapper {
-    background-color: #00ff99;
-  }
+.langauge p{
+  float:left;
+  font-size: 30px;
+  font-family: "Exo", sans-serif;
+}
 
-  .nav {  /*ハンバーガーメニュー*/
-    left:90%;
-    color: white;
-  }
+/*.hhh {
+  position: absolute;
+  top:440px;
+  left:28%;
+}
 
-  .hi {  /*hi,I'm Yusaku.*/
-    top:200px;
-    color: white;
-  }
+.ccc {
+  position: absolute;
+  top:440px;
+  left:48%;
+}
 
-  .move {/*--please scroll---*/
-    text-align: center;
-  }
-
-  /*-----------------second-wrapper------------------------*/
-
-  .second-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    height:100%;
-    justify-content: center;
-  }
-
-  .about {
-    text-align:center;
-  }
-
-  .about h2{ /*ABOUTの文字*/
-    font-size:70px;
-  }
-
-  .about img { /*プロフィール画像 (yusaku-icon)*/
-    width:370px;
-    height:370px;
-    margin: auto;
-    position: static;
-    margin-top:-50px;
-    margin-bottom:30px;
-  }
+.jjj {
+  position: absolute;
+  top:440px;
+  left:64%;
+}*/
 
 
-  /*--------------------third-wrapper--------------------------*/
+/*---------------------four-contents----------------------*/
 
-  .third-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    height:100%;
-    justify-content: center;
-    padding-top:20px;
-  }
 
-  .langauge {
-    width:100%;
-    display:inline-block;
-  }
+.four-wrapper {
+  height:500px;
+  width:100%;
+}
 
-  .myhtml {
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-    display:inline-block;
-    box-sizing: border-box;
-  }
+.contact {
+  font-size:50px;
+  color:#00ff99;
+  text-align: center;
+}
 
-  .mycss {
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-    display:inline-block;
-    box-sizing: border-box;
-  }
+.contact h2 {
+  padding-top:30px;
+}
 
-  .myjs{
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-    display:inline-block;
-    box-sizing: border-box;
-  }
+.form {
+  text-align: center;
+  margin-top: 130px;
+}
+
+.fa-twitter {
+  transition: all 0.1s linear;
+  font-size:60px;
+  color:#55acee;
+  margin: 0 30px;
+  padding:10px;
+  display: inline-block;
+}
+
+.form a {
+  border-color:transparent;
+}
+
+.fa-twitter:hover {   /*hoverhover*/
+  transition: all 0.1s linear;
+  background-color: #55acee;
+  color: white;
+  border-radius: 5px;
+  animation-name:move;
+  transform: translate(0, -30px);
+}
+
+.fa-envelope {
+  transition: all 0.1s linear;
+  color:#cc33ff;
+  font-size:60px;
+  margin:0 30px;
+  display: inline-block;
+  text-decoration:none;
+}
+
+.fa-envelope:hover {   /*hoverhover*/
+  background-color:#cc33ff;
+  padding:10px;
+  color: white;
+  border-radius: 5px;
+  animation-name:move;
+  transform: translate(0, -30px);
+}
+
+.keep {
+  font-size: 20px;
+  margin-top:50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/*--------------------------------footer-------------------------*/
+
+footer {
+  background-color: #00ff99;
+  width: 100%;
+  text-align: center;
+  bottom:0;
+}
+
+footer p {
+  color: white;
+  font-weight:bold;
+  line-height: 100px;
+}
+
+
+
+/*--------------------------ナビゲーションハンバーガー-----------------------*/
+
+.open {
+  background-color: white;
+  color:#00ff99;
+}
+.open ul li {
+  list-style: none;
+  text-align: center;
+  margin-top:30px;
+}
+
+.open ul li a{
+  font-weight:bold;
+  text-decoration: none;
+  color:#00ff99;
+  font-size: 40px;
+}
+/*ドロワーナビゲーションの記述*/
+
+#nav {
+  background-color: white;
+  width:270px;
+  height:100%;
+  position:fixed;
+  right:-270px;
+  top:0;
+}
+
+.show {
+  transform: translate3d(-270px, 0, 0);
+}
+
+#wrapper, #nav {
+  transition: transform 0.3s;
 }
