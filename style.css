@@ -9,7 +9,7 @@
 
 
 body{
-    font-family: "Exo", sans-serif;
+    font-family: "Exo", 'arial unicode ms';
 }
 
 .wrapper {
@@ -319,6 +319,10 @@ body{
   font-size:25px;
   padding-top:30px;
   padding-left:70px;
+}
+
+.myname span {
+  font-family: 'arial unicode ms'
 }
 
 .intro p { /*ボックス５個*/
