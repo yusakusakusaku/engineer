@@ -173,6 +173,11 @@
     margin-bottom:30px;
   }
 
+  .myname span {
+    font-family: 'arial unicode ms';
+    font-weight: bold;
+  }
+
 
   /*--------------------third-wrapper--------------------------*/
 
