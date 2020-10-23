@@ -322,7 +322,7 @@ body{
 }
 
 .myname span {
-  font-family: 'arial unicode ms'
+  font-family: 'arial unicode ms';
 }
 
 .intro p { /*ボックス５個*/
